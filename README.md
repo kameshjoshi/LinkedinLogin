@@ -1,10 +1,12 @@
 Before starting application create the databaase in mysql using 
 
-```CREATE USER 'linkedin_api'@'localhost' IDENTIFIED BY 'linkedin_api';
+```
+CREATE USER 'linkedin_api'@'localhost' IDENTIFIED BY 'linkedin_api';
 
 GRANT ALL PRIVILEGES ON linkedin_api.* TO 'linkedin_api'@'localhost';
 
-create database linkedin_api;```
+create database linkedin_api;
+```
 
 To Start server type> bin/rails s
 
