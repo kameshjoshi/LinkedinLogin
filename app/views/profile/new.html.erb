@@ -1,0 +1,17 @@
+<h5>Please fill the following details</h5>
+
+<%= form_for @profile,url: profile_index_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :contact_number %>
+  <%= f.text_field :contact_number %>
+  <br>
+  <%= f.label :email_id %>
+  <%= f.text_field :email_id %>
+  <br>
+  <%= f.label :current_city %>
+  <%= f.text_field :current_city %>
+  <br>
+  <%= f.submit "Create" %>
+<% end %>

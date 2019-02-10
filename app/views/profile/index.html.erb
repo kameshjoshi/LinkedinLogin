@@ -1,0 +1,7 @@
+<% if @profile.present? %>
+	<h5>Details submitted are</h5>
+	<p>Name : <%=Profile::CRYPT.decrypt_and_verify(@profile.name)%></p>
+	<p>Email Id : <%=Profile::CRYPT.decrypt_and_verify(@profile.contact_number)%></p>
+	<p>contact Number : <%=Profile::CRYPT.decrypt_and_verify(@profile.email_id)%></p>
+	<p>Current City : <%=Profile::CRYPT.decrypt_and_verify(@profile.current_city)%></p>
+<% end %>
